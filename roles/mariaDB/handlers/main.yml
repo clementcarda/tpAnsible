@@ -1,0 +1,7 @@
+---
+
+- name: "start mariaDB"
+  service:
+    name: mysql
+    state: started
+    enable: true

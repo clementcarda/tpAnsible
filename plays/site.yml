@@ -1,6 +1,6 @@
 ---
 
-- name: install and start apache
+- name: install and start PHP and apache
   hosts: app
   remote_user: clement
   become: true
@@ -8,3 +8,11 @@
   roles:
     - apache
     - php
+
+- name: install and start mariaDB
+  hosts: db
+  remote_user: clement
+  become: true
+
+  roles:
+    - mariaDB
