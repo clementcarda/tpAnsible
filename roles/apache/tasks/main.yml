@@ -1,0 +1,7 @@
+---
+
+- name: install Apache2
+  apt:
+    name: apache2
+    state: present
+  notify: restart Apache

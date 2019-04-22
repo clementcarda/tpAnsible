@@ -1,0 +1,10 @@
+---
+
+- name: install and start apache
+  hosts: app
+  remote_user: clement
+  become: true
+
+  roles:
+    - apache
+    - php

@@ -1,0 +1,7 @@
+---
+
+- name: instal php
+  apt:
+    name: php
+    state: present
+  notify: restart php
